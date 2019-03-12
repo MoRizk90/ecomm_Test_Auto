@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopCommerceSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.RegisterationTestCases">
+        <methods>
+          <include name="killDriver"/>
+          <include name="startDriver"/>
+          <include name="failuersScreenShot"/>
+          <include name="registerUSer"/>
+        </methods>
+      </class> <!-- tests.RegisterationTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [nopCommerceSuite] -->
