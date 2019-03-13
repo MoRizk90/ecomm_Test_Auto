@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,8 +22,8 @@ public class HomePage extends pageBase {
 	@FindBy(xpath= "//*[@id=\"small-searchterms\"]")
 	WebElement searchTxtBox;
 	
-	@FindBy(xpath= "//*[@id=\"ui-id-3\"]/span")
-	WebElement dropDownItem;
+	@FindBy(id= "ui-id-2")
+	List<WebElement> dropDownItem;
 	
 	@FindBy(xpath= "//*[@id=\"small-search-box-form\"]/input[2]")
 	WebElement SearchBtn;
@@ -29,19 +31,27 @@ public class HomePage extends pageBase {
 	@FindBy(xpath= "/html/body/div[6]/div[3]/div/div[2]/div/div[2]/div[3]/div/div/div/div/div[2]/h2/a")
 	public WebElement prodcutSearchResult;
 	
+	@FindBy(xpath= "/html/body/div[6]/div[3]/div[1]/ul")
+	public List<WebElement> breadCrumbs;
+	
 	public void openRegisterationpage() {
 		clickWebElement(registerLink);
 	}
 	
 	public void openLoginPage() {
 		clickWebElement(loginLink);
-		
 	}
 	
 	public void productSearch(String productName) {
 		writeInElement(searchTxtBox, productName);
 		clickWebElement(SearchBtn);
 		
+	}
+	
+	public void usingAutoSuggest(String productName) throws InterruptedException {
+		writeInElement(searchTxtBox, productName);
+		Thread.sleep(5000);
+		dropDownItem.get(0).click();
 	}
 
 }
