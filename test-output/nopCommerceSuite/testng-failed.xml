@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [nopCommerceSuite]">
+<suite name="Failed suite [nopCommerceSuite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.FindProjectTestCase">
+      <class name="tests.EmailProductToAFriend">
         <methods>
           <include name="killDriver"/>
           <include name="startDriver"/>
-          <include name="findTheMac"/>
           <include name="failuersScreenShot"/>
+          <include name="emailingCases"/>
         </methods>
-      </class> <!-- tests.FindProjectTestCase -->
+      </class> <!-- tests.EmailProductToAFriend -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerceSuite] -->

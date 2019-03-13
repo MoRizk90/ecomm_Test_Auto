@@ -1,10 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite parallel="false" name="nopCommerceSuite">
-<parameter name="browser" value="chrome"></parameter>
-  <test name="Test">
-    <classes>
-      <class name="tests.FindProjectTestCase"/>
-      <!--  <class name="tests.LoginPageTestCase"/> -->
-    </classes>
-  </test> 
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="Test">
+		<classes>
+			<class name="tests.RegisterationTestCases" />
+			<class name="tests.FindProjectTestCase"/> 
+			<class name="tests.EmailProductToAFriend" />
+			<!-- <class name="tests.FindProjectTestCase"/> -->
+		</classes>
+	</test>
 </suite> 

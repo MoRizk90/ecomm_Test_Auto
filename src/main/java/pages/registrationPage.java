@@ -40,7 +40,6 @@ public class registrationPage extends pageBase {
 		clickWebElement(MaleGenderRadioBtn);
 		writeInElement(FirstNameTextBox, fName);
 		writeInElement(LastNameTxtBox, lName);
-		writeInElement(LastNameTxtBox, lName);
 		writeInElement(emailTxtBox, email);
 		writeInElement(passwordtxtbox, password);
 		writeInElement(confirmpasswordtxtbox, password);
