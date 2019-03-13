@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-12T23:15:15Z" name="nopCommerceSuite" finished-at="2019-03-12T23:15:24Z" duration-ms="8479">
+  <suite name="nopCommerceSuite" duration-ms="2376" started-at="2019-03-13T08:00:54Z" finished-at="2019-03-13T08:00:56Z">
     <groups>
     </groups>
-    <test started-at="2019-03-12T23:15:15Z" name="Test" finished-at="2019-03-12T23:15:24Z" duration-ms="8479">
-      <class name="tests.RegisterationTestCases">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.RegisterationTestCases@70325e14]" started-at="2019-03-12T23:15:09Z" name="startDriver" finished-at="2019-03-12T23:15:15Z" duration-ms="6179" status="PASS">
+    <test name="Test" duration-ms="2376" started-at="2019-03-13T08:00:54Z" finished-at="2019-03-13T08:00:56Z">
+      <class name="tests.FindProjectTestCase">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.FindProjectTestCase@4b9e13df]" name="startDriver" is-config="true" duration-ms="10214" started-at="2019-03-13T08:00:43Z" finished-at="2019-03-13T08:00:54Z">
           <params>
             <param index="0">
               <value>
@@ -18,65 +18,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="registerUSer()[pri:0, instance:tests.RegisterationTestCases@70325e14]" started-at="2019-03-12T23:15:15Z" name="registerUSer" finished-at="2019-03-12T23:15:24Z" duration-ms="8088" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at tests.RegisterationTestCases.registerUSer(RegisterationTestCases.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="findTheMac()[pri:0, instance:tests.FindProjectTestCase@4b9e13df]" name="findTheMac" duration-ms="2348" started-at="2019-03-13T08:00:54Z" finished-at="2019-03-13T08:00:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerUSer -->
-        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterationTestCases@70325e14]" started-at="2019-03-12T23:15:24Z" name="failuersScreenShot" finished-at="2019-03-12T23:15:24Z" duration-ms="341" status="PASS">
+        </test-method> <!-- findTheMac -->
+        <test-method status="PASS" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:tests.FindProjectTestCase@4b9e13df]" name="failuersScreenShot" is-config="true" duration-ms="2" started-at="2019-03-13T08:00:56Z" finished-at="2019-03-13T08:00:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerUSer status=FAILURE method=RegisterationTestCases.registerUSer()[pri:0, instance:tests.RegisterationTestCases@70325e14] output={null}]]]>
+                <![CDATA[[TestResult name=findTheMac status=SUCCESS method=FindProjectTestCase.findTheMac()[pri:0, instance:tests.FindProjectTestCase@4b9e13df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failuersScreenShot -->
-        <test-method is-config="true" signature="killDriver()[pri:0, instance:tests.RegisterationTestCases@70325e14]" started-at="2019-03-12T23:15:24Z" name="killDriver" finished-at="2019-03-12T23:15:25Z" duration-ms="680" status="PASS">
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.FindProjectTestCase@4b9e13df]" name="killDriver" is-config="true" duration-ms="653" started-at="2019-03-13T08:00:56Z" finished-at="2019-03-13T08:00:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
-      </class> <!-- tests.RegisterationTestCases -->
+      </class> <!-- tests.FindProjectTestCase -->
     </test> <!-- Test -->
   </suite> <!-- nopCommerceSuite -->
 </testng-results>

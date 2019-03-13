@@ -17,12 +17,30 @@ public class HomePage extends pageBase {
 	@FindBy(xpath = "//a[@class='ico-login']")
 	WebElement loginLink;
 	
+	@FindBy(xpath= "//*[@id=\"small-searchterms\"]")
+	WebElement searchTxtBox;
+	
+	@FindBy(xpath= "//*[@id=\"ui-id-3\"]/span")
+	WebElement dropDownItem;
+	
+	@FindBy(xpath= "//*[@id=\"small-search-box-form\"]/input[2]")
+	WebElement SearchBtn;
+	
+	@FindBy(xpath= "/html/body/div[6]/div[3]/div/div[2]/div/div[2]/div[3]/div/div/div/div/div[2]/h2/a")
+	public WebElement prodcutSearchResult;
+	
 	public void openRegisterationpage() {
 		clickWebElement(registerLink);
 	}
 	
 	public void openLoginPage() {
 		clickWebElement(loginLink);
+		
+	}
+	
+	public void productSearch(String productName) {
+		writeInElement(searchTxtBox, productName);
+		clickWebElement(SearchBtn);
 		
 	}
 
