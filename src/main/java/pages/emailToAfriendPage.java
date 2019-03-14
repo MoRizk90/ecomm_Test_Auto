@@ -12,6 +12,8 @@ public class emailToAfriendPage extends pageBase{
 	
 	String friendsEmail;
 	String theMsg;
+	@FindBy(xpath= "//*[@id=\"product-details-form\"]/div/div[1]/div[2]/div[9]/div[2]/input")
+	WebElement emailToFriendBtn;
 	
 	@FindBy(xpath= "//*[@id=\"FriendEmail\"]")
 	WebElement frinedEmailTxtBox;
@@ -26,6 +28,7 @@ public class emailToAfriendPage extends pageBase{
 	public WebElement assertedDiv;
 	
 	public void sendEmailwithCorrectData(String friendsEmail, String friendsMsg) {
+		clickWebElement(emailToFriendBtn);
 		writeInElement(frinedEmailTxtBox, friendsEmail);
 		writeInElement(Message, friendsMsg);
 		clickWebElement(sendMailBtn);
