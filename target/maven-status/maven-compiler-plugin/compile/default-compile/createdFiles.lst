@@ -1,0 +1,5 @@
+pages\registrationPage.class
+pages\emailToAfriendPage.class
+pages\LoginPage.class
+pages\pageBase.class
+pages\HomePage.class

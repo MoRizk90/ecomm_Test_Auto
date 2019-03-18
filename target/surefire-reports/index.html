@@ -141,9 +141,9 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;nopCommerceSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;nopCommerceSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginPageTestCase&quot;/&gt;
     &lt;/classes&gt;
@@ -189,7 +189,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginignWithCorrectUserCreditintials')
 data.setCell(0, 2, 'tests.LoginPageTestCase')
-data.setCell(0, 3, 6041);
+data.setCell(0, 3, 6767);
 window.suiteTableData['nopCommerceSuite']= { tableData: data, tableDiv: 'times-div-nopCommerceSuite'}
 return data;
 }
@@ -227,15 +227,15 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginignWithCorrectUserCreditintials</span>
-                <span class="method-start">6808 ms</span>
+                <span class="method-start">6349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">failuersScreenShot([TestResult name=loginignWithCorrectUserCreditintials status=SUCCESS method=LoginPageTestCase.logini...)</span>
-                <span class="method-start">12855 ms</span>
+                <span class="method-start">13117 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">killDriver</span>
-                <span class="method-start">12981 ms</span>
+                <span class="method-start">13209 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

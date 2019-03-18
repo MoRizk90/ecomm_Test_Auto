@@ -1,0 +1,8 @@
+tests\EmailProductToAFriend.class
+tests\LoginPageTestCase.class
+utilities\Helper.class
+tests\testBase.class
+tests\RegisterationTestCases.class
+tests\ContactUsTestCase.class
+tests\HomePageTestCase.class
+tests\FindProjectTestCase.class
