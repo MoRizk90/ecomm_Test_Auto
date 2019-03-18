@@ -12,8 +12,7 @@ public class RegisterationTestCaseWithDDT extends testBase {
 	
 	@DataProvider(name= "testData")
 	public static Object[][] userData(){
-		
-		
+	
 		return new Object[][] {
 			
 			{"Mohammed","Rizk","Moe33@Moe345.com","Pass1234"},
