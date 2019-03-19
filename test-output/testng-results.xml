@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-18T23:36:12Z" name="nopCommerceSuite" finished-at="2019-03-18T23:36:21Z" duration-ms="8751">
+  <suite started-at="2019-03-19T09:46:50Z" name="nopCommerceSuite" finished-at="2019-03-19T09:47:13Z" duration-ms="23042">
     <groups>
     </groups>
-    <test started-at="2019-03-18T23:36:12Z" name="Test" finished-at="2019-03-18T23:36:21Z" duration-ms="8751">
-      <class name="tests.RegisterationTestCasesWithDTTandProp">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDTTandProp@37ceb1df]" started-at="2019-03-18T23:36:07Z" name="startDriver" finished-at="2019-03-18T23:36:12Z" duration-ms="5847" status="PASS">
+    <test started-at="2019-03-19T09:46:50Z" name="Test" finished-at="2019-03-19T09:47:13Z" duration-ms="23042">
+      <class name="tests.RegisterationTestCasesWithDttAndExcel">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:46:44Z" name="startDriver" finished-at="2019-03-19T09:46:50Z" duration-ms="5928" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,122 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="registerUSer()[pri:0, instance:tests.RegisterationTestCasesWithDTTandProp@37ceb1df]" started-at="2019-03-18T23:36:12Z" name="registerUSer" finished-at="2019-03-18T23:36:21Z" duration-ms="8711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUSer -->
-        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterationTestCasesWithDTTandProp@37ceb1df]" started-at="2019-03-18T23:36:21Z" name="failuersScreenShot" finished-at="2019-03-18T23:36:21Z" duration-ms="4" status="PASS">
+        <test-method signature="registerUSer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:46:50Z" name="registerUSer" data-provider="excelData" finished-at="2019-03-19T09:46:59Z" duration-ms="8556" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDTTandProp.registerUSer()[pri:0, instance:tests.RegisterationTestCasesWithDTTandProp@37ceb1df] output={null}]]]>
+                <![CDATA[Fox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Excel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fox@Excel.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUSer -->
+        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:46:59Z" name="failuersScreenShot" finished-at="2019-03-19T09:46:59Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDttAndExcel.registerUSer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failuersScreenShot -->
-        <test-method is-config="true" signature="killDriver()[pri:0, instance:tests.RegisterationTestCasesWithDTTandProp@37ceb1df]" started-at="2019-03-18T23:36:21Z" name="killDriver" finished-at="2019-03-18T23:36:22Z" duration-ms="682" status="PASS">
+        <test-method signature="registerUSer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:46:59Z" name="registerUSer" data-provider="excelData" finished-at="2019-03-19T09:47:06Z" duration-ms="7103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[excel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[excel@fox.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUSer -->
+        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:47:06Z" name="failuersScreenShot" finished-at="2019-03-19T09:47:06Z" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDttAndExcel.registerUSer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failuersScreenShot -->
+        <test-method signature="registerUSer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:47:06Z" name="registerUSer" data-provider="excelData" finished-at="2019-03-19T09:47:13Z" duration-ms="6868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1@test2.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUSer -->
+        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:47:13Z" name="failuersScreenShot" finished-at="2019-03-19T09:47:13Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDttAndExcel.registerUSer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failuersScreenShot -->
+        <test-method is-config="true" signature="killDriver()[pri:0, instance:tests.RegisterationTestCasesWithDttAndExcel@6913c1fb]" started-at="2019-03-19T09:47:13Z" name="killDriver" finished-at="2019-03-19T09:47:14Z" duration-ms="594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
-      </class> <!-- tests.RegisterationTestCasesWithDTTandProp -->
+      </class> <!-- tests.RegisterationTestCasesWithDttAndExcel -->
     </test> <!-- Test -->
   </suite> <!-- nopCommerceSuite -->
 </testng-results>
