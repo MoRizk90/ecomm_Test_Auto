@@ -8,6 +8,7 @@ import pages.LoginPage;
 public class LoginPageTestCase extends testBase{
 	HomePage homePageObj;
 	LoginPage loginPageObj;
+	String fox;
 	
 	@Test
 	public void loginignWithCorrectUserCreditintials() throws InterruptedException {
