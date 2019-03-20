@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content passed suite-nopCommerceSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCasesWithDttAndExcel" class="method navigator-link" hash-for-method="registerUSer(Fox, Excel, Fox@Excel.com, 123456.0)">registerUSer(Fox, Excel, Fox@Excel.com, 123456.0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCasesWithDttAndExcel" class="method navigator-link" hash-for-method="registerUSer(test1, test2, test1@test2.com, 123456.0)">registerUSer(test1, test2, test1@test2.com, 123456.0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCasesWithDttAndExcel" class="method navigator-link" hash-for-method="registerUSer(excel, fox, excel@fox.com, 123456.0)">registerUSer(excel, fox, excel@fox.com, 123456.0)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCasesDttWithCVS" class="method navigator-link" hash-for-method="registerUSer">registerUSer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-nopCommerceSuite -->
@@ -130,31 +120,14 @@
           <div class="suite-nopCommerceSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.RegisterationTestCasesWithDttAndExcel</span>
+              <span class="class-name">tests.RegisterationTestCasesDttWithCVS</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUSer(Fox, Excel, Fox@Excel.com, 123456.0)">
-                  </a> <!-- registerUSer(Fox, Excel, Fox@Excel.com, 123456.0) -->
+                  <a name="registerUSer">
+                  </a> <!-- registerUSer -->
                   <span class="method-name">registerUSer</span>
-                  <span class="parameters">(Fox, Excel, Fox@Excel.com, 123456.0)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUSer(test1, test2, test1@test2.com, 123456.0)">
-                  </a> <!-- registerUSer(test1, test2, test1@test2.com, 123456.0) -->
-                  <span class="method-name">registerUSer</span>
-                  <span class="parameters">(test1, test2, test1@test2.com, 123456.0)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUSer(excel, fox, excel@fox.com, 123456.0)">
-                  </a> <!-- registerUSer(excel, fox, excel@fox.com, 123456.0) -->
-                  <span class="method-name">registerUSer</span>
-                  <span class="parameters">(excel, fox, excel@fox.com, 123456.0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +145,7 @@
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.RegisterationTestCasesWithDttAndExcel&quot;/&gt;
+      &lt;class name=&quot;tests.RegisterationTestCasesDttWithCVS&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- nopCommerceSuite --&gt;
@@ -212,24 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registerUSer')
-data.setCell(0, 2, 'tests.RegisterationTestCasesWithDttAndExcel')
-data.setCell(0, 3, 8556);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerUSer')
-data.setCell(1, 2, 'tests.RegisterationTestCasesWithDttAndExcel')
-data.setCell(1, 3, 7103);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'registerUSer')
-data.setCell(2, 2, 'tests.RegisterationTestCasesWithDttAndExcel')
-data.setCell(2, 3, 6868);
+data.setCell(0, 2, 'tests.RegisterationTestCasesDttWithCVS')
+data.setCell(0, 3, 24389);
 window.suiteTableData['nopCommerceSuite']= { tableData: data, tableDiv: 'times-div-nopCommerceSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-nopCommerceSuite">
               </div> <!-- times-div-nopCommerceSuite -->
             </div> <!-- times-div -->
@@ -255,38 +220,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterationTestCasesWithDttAndExcel</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.RegisterationTestCasesDttWithCVS</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startDriver(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">registerUSer(Fox, Excel, Fox@Excel.com, 123456.0)</span>
-                <span class="method-start">6425 ms</span>
+                <span class="method-name">registerUSer</span>
+                <span class="method-start">8133 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">failuersScreenShot([TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDttAndExcel.registerUS...)</span>
-                <span class="method-start">14986 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">registerUSer(excel, fox, excel@fox.com, 123456.0)</span>
-                <span class="method-start">14989 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">failuersScreenShot([TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDttAndExcel.registerUS...)</span>
-                <span class="method-start">22092 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">registerUSer(test1, test2, test1@test2.com, 123456.0)</span>
-                <span class="method-start">22097 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">failuersScreenShot([TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesWithDttAndExcel.registerUS...)</span>
-                <span class="method-start">28966 ms</span>
+                <span class="method-name">failuersScreenShot([TestResult name=registerUSer status=SUCCESS method=RegisterationTestCasesDttWithCVS.registerUSer()[...)</span>
+                <span class="method-start">32528 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">killDriver</span>
-                <span class="method-start">29060 ms</span>
+                <span class="method-start">32666 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
