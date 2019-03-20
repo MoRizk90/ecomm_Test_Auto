@@ -16,7 +16,7 @@ public class ExcelReader {
 	static FileInputStream fis = null;
 
 	public FileInputStream getFileInputStream() {
-		java.lang.String filePath = System.getProperty("user.dir") + "\\src\\test\\java\\data\\userData.xlsx";
+		java.lang.String filePath = System.getProperty("user.dir") + "\\src\\test\\java\\data\\userData.csv";
 		File srcfile = new File(filePath);
 		try {
 			fis = new FileInputStream(srcfile);
