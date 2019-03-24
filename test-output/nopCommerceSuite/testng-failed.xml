@@ -4,14 +4,14 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.RegisterationTestCaseWithDDT">
+      <class name="tests.RegisterationTestCasesDttWithJSON">
         <methods>
-          <include name="registerUSer" invocation-numbers="1"/>
           <include name="killDriver"/>
           <include name="startDriver"/>
           <include name="failuersScreenShot"/>
+          <include name="registerUSer"/>
         </methods>
-      </class> <!-- tests.RegisterationTestCaseWithDDT -->
+      </class> <!-- tests.RegisterationTestCasesDttWithJSON -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerceSuite] -->
