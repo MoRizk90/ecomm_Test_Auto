@@ -4,7 +4,7 @@
 	<test name="Test">
 		<classes>
 			
-			<class name="tests.RegisterationTestCasesDttWithJSON" />
+			<class name="tests.RegisterationTestCasesDttWithFaker" />
 			<!-- <class name="tests.FindProjectTestCase"/> -->
 		</classes>
 	</test>
