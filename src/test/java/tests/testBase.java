@@ -10,9 +10,10 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import utilities.Helper;
 
-public class testBase {
+public class testBase extends AbstractTestNGCucumberTests {
 	protected WebDriver testBaseDriver;
 	
 	@BeforeSuite

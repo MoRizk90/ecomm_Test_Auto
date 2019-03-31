@@ -1,5 +1,11 @@
 package runner;
 
-public class TestRunner {
+import cucumber.api.CucumberOptions;
+import tests.testBase;
+
+@CucumberOptions(features= "\\src\\test\\java\\features\\userRegisteraion.feature"
+, glue= {"steps"}
+, plugin= {"pretty","html:target/cucumber-html-report"})
+public class TestRunner extends testBase {
 
 }
