@@ -8,6 +8,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -18,7 +19,7 @@ public class testBase extends AbstractTestNGCucumberTests {
 	
 	@BeforeSuite
 	@Parameters({"browser"})
-	public void startDriver(String theBrowser) {
+	public void startDriver(@Optional("chrome") String theBrowser) {
 		
 		if(theBrowser.equalsIgnoreCase("chrome")) {
 			String driverPaths= System.getProperty("user.dir") + "/drivers/chromedriver.exe";
