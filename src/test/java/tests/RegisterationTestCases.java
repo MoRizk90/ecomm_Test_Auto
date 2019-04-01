@@ -16,6 +16,7 @@ public class RegisterationTestCases extends testBase {
 	@Test
 	public void registerUSer() throws InterruptedException {
 		homePageObj = new HomePage(testBaseDriver);
+		System.out.println(testBaseDriver);
 		regPageObj = new registrationPage(testBaseDriver);
 		homePageObj.openRegisterationpage();
 		regPageObj.registerNewUser(firstName, lastName, email, password);

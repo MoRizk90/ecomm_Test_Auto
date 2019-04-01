@@ -34,7 +34,7 @@ public class testBase extends AbstractTestNGCucumberTests {
 			System.setProperty("webdriver.ie.driver", driverPaths);
 			testBaseDriver = new InternetExplorerDriver();
 		}
-		
+		System.out.println("The driver from inside the test base class : " + testBaseDriver);
 		testBaseDriver.navigate().to("https://demo.nopcommerce.com/");
 
 	}

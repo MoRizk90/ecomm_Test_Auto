@@ -40,6 +40,7 @@ public class HomePage extends pageBase {
 	WebElement contactlink;
 
 	public void openRegisterationpage() {
+		System.out.println("The driver from ins the openregistation " + basePageDriver);
 		clickWebElement(registerLink);
 	}
 
