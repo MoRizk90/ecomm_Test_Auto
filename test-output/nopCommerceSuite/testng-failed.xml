@@ -8,8 +8,8 @@
         <methods>
           <include name="setUpClass"/>
           <include name="killDriver"/>
-          <include name="runScenario" invocation-numbers="0"/>
           <include name="startDriver"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="failuersScreenShot"/>
           <include name="tearDownClass"/>
         </methods>
