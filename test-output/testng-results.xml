@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-01T10:09:30Z" name="Default suite" finished-at="2019-04-01T10:09:30Z" duration-ms="804">
+  <suite started-at="2019-04-01T13:18:45Z" name="nopCommerceSuite" finished-at="2019-04-01T13:18:48Z" duration-ms="2177">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2118cddf]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2638011]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2019-04-01T10:09:30Z" name="Default test" finished-at="2019-04-01T10:09:30Z" duration-ms="804">
+    <test started-at="2019-04-01T13:18:45Z" name="Test" finished-at="2019-04-01T13:18:48Z" duration-ms="2177">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@2118cddf]" started-at="2019-04-01T10:09:22Z" name="startDriver" finished-at="2019-04-01T10:09:30Z" duration-ms="8114" status="PASS">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@2638011]" started-at="2019-04-01T13:18:35Z" name="startDriver" finished-at="2019-04-01T13:18:45Z" duration-ms="10765" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,59 +21,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@2118cddf]" started-at="2019-04-01T10:09:30Z" name="setUpClass" finished-at="2019-04-01T10:09:30Z" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@2638011]" started-at="2019-04-01T13:18:45Z" name="setUpClass" finished-at="2019-04-01T13:18:46Z" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2118cddf]" started-at="2019-04-01T10:09:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-01T10:09:30Z" duration-ms="137" status="FAIL">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2638011]" started-at="2019-04-01T13:18:46Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-04-01T13:18:47Z" duration-ms="1675" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User Registeration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registeration"]]>
+                <![CDATA[User Registeration]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy24.click(Unknown Source)
-at pages.pageBase.clickWebElement(pageBase.java:17)
-at pages.HomePage.openRegisterationpage(HomePage.java:44)
-at steps.userRegistration.the_user_in_the_home_page(userRegistration.java:18)
-at ✽.the user in the home page(file:src/test/java/features/userRegisteraion.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@2118cddf]" started-at="2019-04-01T10:09:30Z" name="failuersScreenShot" finished-at="2019-04-01T10:09:30Z" duration-ms="445" status="PASS">
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="failuersScreenShot(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@2638011]" started-at="2019-04-01T13:18:47Z" name="failuersScreenShot" finished-at="2019-04-01T13:18:47Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2118cddf] output={null}]]]>
+                <![CDATA[[TestResult name=feature status=SUCCESS method=AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@2638011] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failuersScreenShot -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2118cddf]" started-at="2019-04-01T10:09:30Z" name="tearDownClass" finished-at="2019-04-01T10:09:30Z" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2638011]" started-at="2019-04-01T13:18:47Z" name="tearDownClass" finished-at="2019-04-01T13:18:48Z" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="killDriver()[pri:0, instance:runner.TestRunner@2118cddf]" started-at="2019-04-01T10:09:31Z" name="killDriver" finished-at="2019-04-01T10:09:31Z" duration-ms="713" status="PASS">
+        <test-method is-config="true" signature="killDriver()[pri:0, instance:runner.TestRunner@2638011]" started-at="2019-04-01T13:18:48Z" name="killDriver" finished-at="2019-04-01T13:18:48Z" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
       </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- nopCommerceSuite -->
 </testng-results>

@@ -15,7 +15,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import utilities.Helper;
 
 public class testBase extends AbstractTestNGCucumberTests {
-	protected WebDriver testBaseDriver;
+	public static WebDriver testBaseDriver;
 	
 	@BeforeSuite
 	@Parameters({"browser"})

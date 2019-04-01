@@ -1,5 +1,7 @@
 package steps;
 
+import org.testng.Assert;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -9,19 +11,18 @@ import tests.testBase;
 
 public class userRegistration extends testBase{
 
-	HomePage homeObj;
+	HomePage homeObj ;
 	registrationPage regObj;
 	@Given("the user in the home page")
 	public void the_user_in_the_home_page() {
-		System.out.println("From inside cucmber : " + testBaseDriver);
 		homeObj = new HomePage(testBaseDriver);
-		System.out.println(testBaseDriver);
+		System.out.println("From inside cucmber : " + testBaseDriver);
 		homeObj.openRegisterationpage();
 	}
 
 	@When("the user clicks on register link")
 	public void the_user_clicks_on_register_link() {
-		System.out.println(testBaseDriver);
+		Assert.assertTrue(testBaseDriver.getCurrentUrl().contains("reg"));
 		
 	}
 
