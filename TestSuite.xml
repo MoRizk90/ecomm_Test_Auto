@@ -4,8 +4,8 @@
 	<test name="Test">
 		<classes>
 			
-			<class name="runner.TestRunner" />
-			<!-- <class name="tests.FindProjectTestCase"/> -->
+			<!--  <class name="runner.TestRunner" /> -->
+			<class name="tests.RegisterationTestCases"/>
 		</classes>
 	</test>
 </suite> 

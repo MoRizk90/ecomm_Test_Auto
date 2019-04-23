@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class pageBase {
-	protected WebDriver basePageDriver;
+	public static WebDriver basePageDriver;
 	public JavascriptExecutor jsExec;
 	
 	public pageBase(WebDriver driverforBasePage) {

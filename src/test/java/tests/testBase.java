@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -33,6 +36,18 @@ public class testBase extends AbstractTestNGCucumberTests {
 			String driverPaths= System.getProperty("user.dir") + "/drivers/ieDriverServer.exe";
 			System.setProperty("webdriver.ie.driver", driverPaths);
 			testBaseDriver = new InternetExplorerDriver();
+			//headless browser testing
+		}else if (theBrowser.equalsIgnoreCase("headless")) {
+			String driverPaths= System.getProperty("user.dir") + "/drivers/phantomjs.exe";
+			System.setProperty("webdriver.ie.driver", driverPaths);
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setJavascriptEnabled(true);
+			cap.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, driverPaths);
+			String[] phantomArgs = {"--web-security=no","--ignore-ssl-errors=yes"};
+			cap.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomArgs);
+			testBaseDriver = new PhantomJSDriver(cap);
+			
+			
 		}
 		System.out.println("The driver from inside the test base class : " + testBaseDriver);
 		testBaseDriver.navigate().to("https://demo.nopcommerce.com/");
